@@ -1,0 +1,83 @@
+[#title]
+:experimental:
+= Some testing with `adoc`
+:toc:
+
+== Working?
+Does this work? I really hope this works.
+
+== Links
+https://www.google.com/:[This is a link].
+
+== Codeblocks
+
+.HelloWorld.java
+[source,java]
+----
+public class HelloWorld {
+  public static void main(String... args) {
+    System.out.println("Hello, world!");
+  }
+}
+----
+
+same as above, but from a file
+
+.HelloWorld.java, from a file
+[source,java, linenums]
+----
+include::HelloWorld.java[]
+----
+
+.hello_world.sh
+[source,bash]
+----
+#!/usr/bin/env bash
+echo "Hello, world!"
+----
+
+[#listings]
+== Lists, listings, ...
+
+=== Lists
+* this should work
+* as should this
+** and of course this
+*** or this
+
+=== Enumerations
+. first
+. second
+.. tow point one
+... two point one point one
+. third
+
+=== Mixed
+* foo
+. bar
+.. baz
+* bang
+. bong
+.. bung
+
+=== Checkboxes?
+* [ ] Checkboxes
+** [ ] Everywhere?
+*** [x] Everywhere!
+** really everywhere? [ ]
+*** nah =/
+. [ ] what about here?
+.. nah also
+
+== Anchors
+Back to the <<title, Title>>.
+
+Same but with xref: xref:title:[Title].
+
+Or back to the <<listings, Lists>>.
+
+== Kbd?
+kbd:[ALT+F4] (needs the `experimental` thingy at the start)
+
+This is supposed to represent a btn:[OK] button.
+
